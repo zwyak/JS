@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Day1</title>
+
+    <script type="text/javascript" src="./index2.js">
+
+    </script>
+
+    <link rel="stylesheet" href="./index2.css">
+  </head>
+  <body>
+    <h2>Personal Info</h2>
+
+    <table>
+      <tr>
+        <td><label for="NameInpt">Name: </label></td>
+        <td><input id="nm" type="text" name="NameInpt" value=""></td>
+      </tr>
+
+      <tr>
+        <td><label for="AgeInpt">Age: </label></td>
+        <td><input id="nmbr" type="number" name="AgeInpt" value="18"></td>
+      </tr>
+
+      <tr>
+        <td><label for="TelInpt">Phone: </label></td>
+        <td><input id="tel" type="tel" name="TelInpt" value=""></td>
+      </tr>
+
+      <tr>
+        <td><label for="DetailsInpt">Details: </label></td>
+        <td><input id="dtls" type="details" name="DetailsInpt" value=""></td>
+      </tr>
+    </table>
+
+    <br>
+    <input id="btn" type="button" name="AddBtn" value="Add" onclick="AddPI(
+    document.getElementById('nm').value,
+    document.getElementById('nmbr').value,
+    document.getElementById('tel').value,
+    document.getElementById('dtls').value
+    )">
+    <br>
+    <br>
+    <table id="table" class="table">
+      <header>
+        <tr>
+          <td>Name</td>
+          <td>Age</td>
+          <td>Phone</td>
+          <td>Details</td>
+        </tr>
+      </header>
+    </table>
+  </body>
+</html>
